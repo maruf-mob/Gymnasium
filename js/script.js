@@ -10,4 +10,16 @@ $(document).ready(function(){
     new VenoBox({
         selector: ".abt-vdo"
     });
+    
+    new VenoBox({
+        selector: ".gallery-pop"
+    });
+    
+    $('.testimonial-slider').slick({
+        arrows:false,
+        dots:false,
+        autoplay:false,
+        slideToShow:2,
+    });
+    
 });
