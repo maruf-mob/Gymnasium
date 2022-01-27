@@ -17,9 +17,11 @@ $(document).ready(function(){
     
     $('.testimonial-slider').slick({
         arrows:false,
-        dots:false,
-        autoplay:false,
-        slideToShow:2,
+        dots:true,
+        autoplay:true,
+        slidesToShow:2,
     });
+    
+    $('.counter').counterUp();
     
 });

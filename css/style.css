@@ -34,8 +34,8 @@
      vertical-align: middle;
  }
  
- ul ol{
-     list-style: none;
+ ul,ol{
+     list-style: none !important;
  }
  
  a{
@@ -363,9 +363,6 @@
 /*=================================
             about css ends
  =================================== */
-#gallery{
-
-}
 #gallery .gallery-main{
     background:url(../images/gallery-bg.jpg) no-repeat center / cover;
     position:relative;
@@ -460,10 +457,16 @@
 /*=================================
             team css ends
  =================================== */
+ #testimonial{
+     padding-bottom:80px;
+ }
 #testimonial .testimonial-main{
     background:url(../images/testimonial-bg.jpg)no-repeat center / cover;
     position:relative;
     z-index:1;
+    padding-top:30px;
+    padding-bottom:85px;
+    margin-top:30px;
 }
 #testimonial .testimonial-main::after{
     content:'';
@@ -474,12 +477,127 @@
     inset: 0;
     z-index: -1;
 }
+#testimonial .slick-slide{
+    padding:0 15px;
+}
+#testimonial .slick-dots{
+    position:absolute;
+    left:50%;
+    bottom:-50px;
+    padding-left:47%;
+    margin-top:35px;
+    margin-bottom:0;
+    display:flex;
+    transform: translateX(-50%);
+    
+}
+#testimonial .slick-dots li{
+    width:16px;
+    height:16px;
+    border:1px solid #ffffff;
+    border-radius:50%;
+    margin:0 5px;
+    cursor:pointer;
+}
+#testimonial .slick-dots li::marker{
+    font-size:0px;
+}
+#testimonial .slick-dots li button{
+    font-size:0px;
+    border:none;
+    outline:none;
+}
+#testimonial .slick-dots li.slick-active{
+    background:var(--brand);
+    border:var(--brand);
+    transform:scale(1.1);
+}
 
+/*=================================
+            testimonial css ends
+ =================================== */ 
+ #membership{
+     padding-bottom:80px;
+ }
+ #membership .membership-item{
+     margin-top: 20px;
+ }
+#membership .membership-item h4{
+    background:var(--bg1);
+    line-height:54px;
+    transition: all linear 0.4s;
+}
+#membership .membership-item:hover h4{
+    background:var(--brand);
+    color:#ffffff;    
+}
+#membership .membership-item h3{
+    line-height:122px;
+    background:url(../images/regular-member.jpg)no-repeat center /cover;
+    position:relative;
+    z-index:1;
+}
+#membership .membership-item h3::after{
+    content:'';
+    height:100%;
+    width:100%;
+    background:var(--over8);
+    position:absolute;
+    inset: 0;
+    z-index: -1;
+}
+#membership .membership-item ul{
+    background:var(--bg2);
+    padding-top:40px;
+    padding-bottom:40px;
+}
+#membership .membership-item ul li{
+    color:var(--cl2);
+    margin-bottom:20px;
+}
+#membership .membership-item ul li:last-child{
+    margin-bottom:0;
+}
+#membership .membership-item .btn{
+    background:var(--bg1);
+    line-height:34px;
+    transition: all linear 0.4s;  
+}
+#membership .membership-item:hover .btn{
+    background:var(--brand);
+    color:#ffffff;  
+}
 
+/*=================================
+            membership css ends
+ =================================== */ 
+#funfact{
+    background:url(../images/counter-bg.jpg)no-repeat center / cover;
+    position:relative;
+    z-index:1;
+    padding-top:45px;
+    padding-bottom:45px;
+}
+#funfact::after{
+    content:'';
+    height:100%;
+    width:100%;
+    background:var(--over9);
+    position:absolute;
+    inset: 0;
+    z-index: -1;
+}
+
+/*=================================
+            funfact css ends
+ =================================== */ 
+#schedule{
+    padding-top:80px;
+}
 
 
 
 
 /*=================================
-            testimonial css ends
- =================================== */
+            schedule css ends
+ =================================== */ 
