@@ -537,6 +537,18 @@
     position:relative;
     z-index:1;
 }
+#membership .membership-item .nice{
+    line-height:122px;
+    background:url(../images/professional-member.jpg)no-repeat center /cover;
+    position:relative;
+    z-index:1;
+}
+#membership .membership-item .easy{
+    line-height:122px;
+    background:url(../images/standard-member.jpg)no-repeat center /cover;
+    position:relative;
+    z-index:1;
+}
 #membership .membership-item h3::after{
     content:'';
     height:100%;
