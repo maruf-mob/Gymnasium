@@ -603,13 +603,39 @@
 /*=================================
             funfact css ends
  =================================== */ 
-#schedule{
+#routine{
     padding-top:80px;
 }
-
-
-
+#routine .routine-nav{
+    margin-top:20px;
+}
+#routine .nav-tabs{
+    border:none !important;
+    flex-wrap:nowrap !important;
+}
+#routine .nav-tabs .nav-item{
+    width:100%;
+}
+#routine .nav-tabs .nav-link{
+    border-radius:0 !important;
+    background:var(--bg2);
+    line-height:50px;
+    width:100%;
+    padding:0 !important;
+}
+#routine .nav-tabs .nav-link:hover{
+    border-radius:0 !important;
+    border-color:transparent !important;
+    color:var(--th_dark)!important;
+}
+#routine .nav-tabs .nav-link.active{
+    background:var(--brand);
+    color:#ffffff;
+}
+#routine .nav-tabs .nav-item.show .nav-link, #routine .nav-tabs .nav-link.active{
+    border:none !important;
+}
 
 /*=================================
-            schedule css ends
+            routine css ends
  =================================== */ 
