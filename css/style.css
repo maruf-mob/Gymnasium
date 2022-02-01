@@ -75,6 +75,9 @@
  .fs-16{
      font-size:16px;
  }
+ .fs-20{
+     font-size:20px;
+ }
  .fs-22{
      font-size:22px;
  }
@@ -107,6 +110,9 @@
  }
  .th-sub{
      color:var(--cl2);
+ }
+ .th-twit{
+     color:var(--twit);
  }
   /*=================================
             typography css ends
@@ -615,7 +621,7 @@
 }
 #routine .nav-tabs .nav-item{
     width:100%;
-}
+} 
 #routine .nav-tabs .nav-link{
     border-radius:0 !important;
     background:var(--bg2);
@@ -635,7 +641,106 @@
 #routine .nav-tabs .nav-item.show .nav-link, #routine .nav-tabs .nav-link.active{
     border:none !important;
 }
-
+#routine .routine-holder ul{
+    margin-top:30px;
+    display:flex;
+    flex-wrap: wrap;
+}
+#routine .routine-holder ul li{
+    background:var(--bg2);
+    width:20%;
+    padding-top:50px;
+    padding-bottom:50px;
+    transform:scale(0.975);
+}
+#routine .routine-holder ul li.active{
+    background:var(--brand);
+}
+#routine .routine-holder ul li.active p{
+    color:#ffffff;
+}
 /*=================================
             routine css ends
+ =================================== */ 
+ #brand{
+     padding-top:80px;
+     padding-bottom:80px;
+ }
+ #brand .brand-item{
+     margin:0 15px;
+ }
+
+#brand .brand-item img{
+    width: 100%;
+}
+#brand .slick-center{
+    box-shadow:0px 0px 10px 0px rgba(0,0,0,0.2); 
+}
+#brand .left-arrow{
+    font-size:28px;
+    cursor:pointer;
+    color:var(--th_dark);
+    position:absolute;
+    left:-30px;
+    top:50%;
+    transform:translateY(-50%);
+    transition: all linear 0.4s;
+}
+#brand .left-arrow:hover{
+    color:var(--brand);
+}
+#brand .right-arrow{
+    font-size:28px;
+    cursor:pointer;
+    color:var(--th_dark);
+    position:absolute;
+    right:-30px;
+    top:50%;
+    transform:translateY(-50%);
+    transition: all linear 0.4s;
+}
+#brand .right-arrow:hover{
+    color:var(--brand);
+}
+
+/*=================================
+            brand css ends
+ =================================== */ 
+footer{
+    background:url(../images/footer-bg.jpg)no-repeat center / cover;
+    position:relative;
+    z-index:1;
+}
+footer::after{
+    content:'';
+    height:100%;
+    width:100%;
+    background:var(--over85);
+    position:absolute;
+    inset: 0;
+    z-index: -1;
+}
+footer ul li:last-child{
+    margin-bottom:0 !important;
+}
+footer .footer-main .opening-hours li{
+    margin-bottom:5px;
+}
+footer .footer-main .opening-hours li span{
+    width:105px;
+    display:inline-block;
+}
+
+footer .footer-main .twitter-feed li{
+    padding-left:30px;
+    margin-bottom:20px;
+}
+footer .footer-main .twitter-feed li a{
+    line-height:18px;
+}
+footer .footer-main .twitter-feed li .twitter-icon{
+    top:8px;
+}
+/*=================================
+            footer css ends
  =================================== */ 
