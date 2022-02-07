@@ -723,6 +723,16 @@ footer::after{
 footer ul li:last-child{
     margin-bottom:0 !important;
 }
+footer .footer-logo img{
+    padding-top:30px;
+    padding-bottom:30px;
+}
+footer .footer-main{
+    padding-top:30px;
+    padding-bottom:30px;
+    border-top:1px solid #ffffff;
+    border-bottom:1px solid #ffffff;
+}
 footer .footer-main .opening-hours li{
     margin-bottom:5px;
 }
@@ -740,6 +750,57 @@ footer .footer-main .twitter-feed li a{
 }
 footer .footer-main .twitter-feed li .twitter-icon{
     top:8px;
+}
+footer .footer-main .footer-gallery li{
+    padding:5px;
+    width:25%;
+}
+footer .footer-main .footer-gallery li img{
+    width:100%;
+}
+footer .footer-main .footer-contact li{
+    position:relative;
+    padding-left:20px;
+    margin-bottom:6px;
+}
+footer .footer-main .footer-contact li a{
+    display:inline-block;
+    line-height:18px;
+}
+footer .footer-main .footer-contact li span{
+    position:absolute;
+    left:0;
+    top:2px;
+}
+footer .footer-main .footer-contact li:nth-child(2) a:last-of-type{
+    margin-left:4px;
+}
+footer .footer-main .footer-contact li:nth-child(3) a:last-of-type{
+    margin-left:4px;
+}
+footer .footer-main .social-icon a i{
+    width:30px;
+    height:30px;
+    border: 1px solid #ffffff;
+    line-height:30px;
+    text-align:center;
+    color:#ffffff;
+    font-size:16px;
+    transition:all linear 0.4s;
+    margin-top:30px;
+}
+footer .footer-main .social-icon a i:hover{
+    background:var(--brand);
+    border-color:var(--brand);
+}
+footer .footer-main .footer-contact h4:last-of-type{
+    margin-top:30px;
+}
+footer .footer-main h4:first-of-type{
+    margin-bottom:30px !important;
+}
+footer .footer-copy p{
+    line-height:52px;
 }
 /*=================================
             footer css ends
