@@ -463,9 +463,6 @@
 /*=================================
             team css ends
  =================================== */
- #testimonial{
-     padding-bottom:80px;
- }
 #testimonial .testimonial-main{
     background:url(../images/testimonial-bg.jpg)no-repeat center / cover;
     position:relative;
@@ -523,6 +520,7 @@
             testimonial css ends
  =================================== */ 
  #membership{
+     padding-top:80px;
      padding-bottom:80px;
  }
  #membership .membership-item{

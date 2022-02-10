@@ -23,16 +23,19 @@
     
     <!-- Custom Style Sheet Link -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Responsive Style Sheet Link -->
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
 </head>
 <body>
     <!-- nav starts -->
-    <nav class="navbar navbar-expand-lg navbar-light py-0 w-100">
+    <nav class="navbar navbar-expand-md navbar-light py-0 w-100">
         <div class="container">
           <a class="navbar-brand py-0" href="#">
             <img src="images/logo.png" alt="logo">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <!-- <span class="navbar-toggler-icon"></span> -->
+            <span class="fas fa-bars"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -43,19 +46,19 @@
                 <a class="nav-link p-0 text-white text-uppercase osw-reg fs-14" href="#">About Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link p-0 text-white text-uppercase osw-reg fs-14">Plans</a>
+                <a class="nav-link p-0 text-white text-uppercase osw-reg fs-14" href="#">Plans</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link p-0 text-white text-uppercase osw-reg fs-14">Team</a>
+                <a class="nav-link p-0 text-white text-uppercase osw-reg fs-14" href="#">Team</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link p-0 text-white text-uppercase osw-reg fs-14">Gallery</a>
+                <a class="nav-link p-0 text-white text-uppercase osw-reg fs-14" href="#">Gallery</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link p-0 text-white text-uppercase osw-reg fs-14">Testimonial</a>
+                <a class="nav-link p-0 text-white text-uppercase osw-reg fs-14" href="#">Testimonial</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link p-0 text-white text-uppercase osw-reg fs-14">Contact</a>
+                <a class="nav-link p-0 text-white text-uppercase osw-reg fs-14" href="#">Contact</a>
               </li>
             </ul>
           </div>
@@ -149,7 +152,7 @@
     <section id="about">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-6 order-2 order-lg-1">
                     <div class="abt-video position-relative">
                         <img src="images/about-bg.jpg" alt="about-bg" class="img-fluid w-100">
                         <div class="abt-overlay w-100 h-100 position-absolute top-0 start-0 d-flex justify-content-center align-items-center">
@@ -159,7 +162,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 order-1 order-lg-2">
                     <div class="abt-text text-center">
                         <header class="section-head text-center">
                             <h3 class="mb-0 text-uppercase osw-reg fs-22 th-dark">
@@ -192,7 +195,7 @@
         <div class="gallery-main">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-4 col-sm-6">
                         <div class="gallery-item position-relative overflow-hidden">
                             <img src="images/gallery-image-1.jpg" alt="image-1" class="img-fluid w-100">
                             <div class="gl-overlay w-100 h-100 position-absolute start-0 d-flex justify-content-center align-items-center" >
@@ -210,7 +213,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-4 col-sm-6">
                         <div class="gallery-item position-relative overflow-hidden">
                             <img src="images/gallery-image-2.jpg" alt="image-2" class="img-fluid w-100">
                             <div class="gl-overlay w-100 h-100 position-absolute start-0 d-flex justify-content-center align-items-center" >
@@ -228,7 +231,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-4 d-sm-none d-md-block d-lg-block ">
                         <div class="gallery-item position-relative overflow-hidden">
                             <img src="images/gallery-image-3.jpg" alt="image-3" class="img-fluid w-100">
                             <div class="gl-overlay w-100 h-100 position-absolute start-0 d-flex justify-content-center align-items-center" >
@@ -264,7 +267,7 @@
         </header>
         <div class="container">
             <div class="row">
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="card rounded-0 team-member">
                         <div class="team-image position-relative overflow-hidden">
                             <img src="images/team-1.jpg" class="card-img-top img-fluid w-100" alt="team-1">
@@ -287,7 +290,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="card rounded-0 team-member">
                         <div class="team-image position-relative overflow-hidden">
                             <img src="images/team-2.jpg" class="card-img-top img-fluid w-100" alt="team-2">
@@ -310,7 +313,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="card rounded-0 team-member">
                         <div class="team-image position-relative overflow-hidden">
                             <img src="images/team-3.jpg" class="card-img-top img-fluid w-100" alt="team-3">
@@ -333,7 +336,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="card rounded-0 team-member">
                         <div class="team-image position-relative overflow-hidden">
                             <img src="images/team-4.jpg" class="card-img-top img-fluid w-100" alt="team-4">
@@ -376,12 +379,12 @@
                     <div class="col-lg-6">
                         <div class="testimonial-item">
                             <div class="row">
-                                <div class="col-lg-2">
+                                <div class="col-lg-2 col-md-3 col-sm-2">
                                     <div class="testimonial-person-image">
                                         <img src="images/test-1.jpg" alt="test-1">
                                     </div>
                                 </div>
-                                <div class="col-lg-10">
+                                <div class="col-lg-10 col-md-9 col-sm-10">
                                     <div class="testimonial-person-detail">
                                        <h5 class="mb-0 text-uppercase text-white osw-reg fs-14">
                                           mridul chakrabarty  
@@ -412,12 +415,12 @@
                     <div class="col-lg-6">
                         <div class="testimonial-item">
                             <div class="row">
-                                <div class="col-lg-2">
+                                <div class="col-lg-2 col-md-3 col-sm-2">
                                     <div class="testimonial-person-image">
                                         <img src="images/test-2.jpg" alt="test-2">
                                     </div>
                                 </div>
-                                <div class="col-lg-10">
+                                <div class="col-lg-10 col-md-9 col-sm-10">
                                     <div class="testimonial-person-detail">
                                        <h5 class="mb-0 text-uppercase text-white osw-reg fs-14">
                                           anamika rajbongshi  
@@ -448,12 +451,12 @@
                     <div class="col-lg-6">
                         <div class="testimonial-item">
                             <div class="row">
-                                <div class="col-lg-2">
+                                <div class="col-lg-2 col-md-3 col-sm-2">
                                     <div class="testimonial-person-image">
                                         <img src="images/test-1.jpg" alt="test-1">
                                     </div>
                                 </div>
-                                <div class="col-lg-10">
+                                <div class="col-lg-10 col-md-9 col-sm-10">
                                     <div class="testimonial-person-detail">
                                        <h5 class="mb-0 text-uppercase text-white osw-reg fs-14">
                                           mridul chakrabarty  
@@ -498,7 +501,7 @@
         </header>
         <div class="container">
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-md-4">
                     <div class="membership-item text-center">
                         <h4 class="mb-0 text-uppercase osw-bold fs-16 th-dark">
                             regular membership
@@ -527,7 +530,7 @@
                     </div>
                 </div>
                 
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-md-4">
                     <div class="membership-item text-center">
                         <h4 class="mb-0 text-uppercase osw-bold fs-16 th-dark">
                             professional membership
@@ -556,7 +559,7 @@
                     </div>
                 </div>
                 
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-md-4">
                     <div class="membership-item text-center">
                         <h4 class="mb-0 text-uppercase osw-bold fs-16 th-dark">
                             standard membership
@@ -596,32 +599,32 @@
     <section id="funfact">
         <div class="container">
             <div class="row">
-                <div class="col-lg-2">
+                <div class="col-lg-2 col-md-4 col-sm-4">
                     <div class="fun-item">
                         <h4 class="mb-0 text-white osw-bold fs-40 counter">261</h4>
                         <p class="mb-0 text-white text-capitalize osw-reg fs-16">cup of tea</p>
                     </div>
                 </div>
-                <div class="col-lg-2">
-                    <div class="fun-item text-lg-center">
+                <div class="col-lg-2 col-md-4 col-sm-4">
+                    <div class="fun-item text-lg-center text-md-center text-sm-center">
                         <h4 class="mb-0 text-white osw-bold fs-40 counter">518</h4>
                         <p class="mb-0 text-white text-capitalize osw-reg fs-16">award win</p>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="fun-item text-lg-center">
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="fun-item text-lg-center text-md-end text-sm-end">
                         <h4 class="mb-0 text-white osw-bold fs-40 counter">999</h4>
                         <p class="mb-0 text-white text-capitalize osw-reg fs-16">happy clients</p>
                     </div>
                 </div>
-                <div class="col-lg-2">
-                    <div class="fun-item text-lg-center">
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                    <div class="fun-item text-lg-center text-md-center">
                         <h4 class="mb-0 text-white osw-bold fs-40 counter">369</h4>
                         <p class="mb-0 text-white text-capitalize osw-reg fs-16">course complete</p>
                     </div>
                 </div>
-                <div class="col-lg-2">
-                    <div class="fun-item text-lg-end">
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                    <div class="fun-item text-lg-end text-md-center text-sm-end">
                         <h4 class="mb-0 text-white osw-bold fs-40  counter">209</h4>
                         <p class="mb-0 text-white text-capitalize osw-reg fs-16">partner gym</p>
                     </div>
@@ -1039,7 +1042,7 @@
         <div class="footer-main">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="footer-item">
                             <h4 class="text-white mb-0 text-uppercase osw-reg fs-14">opening hours</h4>
                             <ul class="ps-0 mb-0 opening-hours">
@@ -1070,7 +1073,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="footer-item">
                             <h4 class="text-white mb-0 text-uppercase osw-reg fs-14">twitter feed</h4>
                             <ul class="ps-0 mb-0 twitter-feed">
@@ -1085,9 +1088,9 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="footer-item">
-                            <h4 class="text-white mb-0 text-uppercase osw-reg fs-14">flickr photos</h4>
+                            <h4 class="text-white mb-0 text-uppercase osw-reg fs-14 flickr">flickr photos</h4>
                             <ul class="ps-0 mb-0 d-flex flex-wrap footer-gallery">
                                 <li><a href="#" target="_blank"><img src="images/flick1.jpg" alt="flick1"></a></li>
                                 <li><a href="#" target="_blank"><img src="images/flick2.jpg" alt="flick2"></a></li>
@@ -1104,13 +1107,13 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="footer-item footer-contact">
-                            <h4 class="text-white mb-0 text-uppercase osw-reg fs-14">contact</h4>
+                            <h4 class="text-white mb-0 text-uppercase osw-reg fs-14 contact">contact</h4>
                             <ul class="ps-0 mb-0 ">
                                 <li><span><i class="fas fa-map-marker-alt text-brand fs-13"></i></span><a href="#" class="open-reg fs-13 text-white">1234 Park Street Avenue, NY City America.</a></li>    
                                 <li><span><i class="fas fa-phone-alt text-brand fs-13"></i></span><a href="tel:8801738696914" class="open-reg fs-13 text-white">+88 017 386 96914,</a><a href="#" class="open-reg fs-13 text-white">+88 017 386 96914.</a></li>    
-                                <li><span><i class="fas fa-envelope text-brand fs-13"></i></span><a href="mailto:info@admin.com" class="open-reg fs-13 text-white">info@admin.com</a><a href="mailto:info@admin.com" class="open-reg fs-13 text-white">info@admin.com</a</li>    
+                                <li><span><i class="fas fa-envelope text-brand fs-13"></i></span><a href="mailto:info@admin.com" class="open-reg fs-13 text-white">info@admin.com</a><a href="mailto:info@admin.com" class="open-reg fs-13 text-white">info@admin.com</a></li>    
                             </ul>
                             <h4 class="text-white mb-0 text-uppercase osw-reg fs-14">get social</h4>
                             <div class="social-icon">
@@ -1135,7 +1138,7 @@
                 </div>
             </div>
         </div>
-        <div class="footer-copy text-lg-center">
+        <div class="footer-copy text-center">
             <p class="mb-0 text-white open-reg fs-13">Copyright &copy; . All rights reserved by <a href="index.html" class="text-uppercase text-brand open-reg fs-13">gymnasium</a></p>
         </div>
     
